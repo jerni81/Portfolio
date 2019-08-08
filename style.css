@@ -1,0 +1,111 @@
+* {
+  border: 1px solid black;
+}
+
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+
+}
+
+main {
+  /* margin-bottom: 30px; */
+}
+
+header {
+  background-image: url(/Users/aj/sei-pirates/unit-01/lesson/wireframes-layouts-grid-systems/starter-code/bootstrap/images/car.jpeg);
+  width: auto;
+  height: 100vh;
+  font-family: 'Knewave', cursive;
+}
+
+.parallax {
+  background-image: url(/Users/aj/sei-pirates/unit-01/lesson/wireframes-layouts-grid-systems/starter-code/bootstrap/images/car.jpeg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+
+}
+
+h2 {
+  text-align: center;
+}
+
+.sec1 {
+  background-color: green;
+  width: auto;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#aboutP {
+  background-color: red;
+  height: 250px;
+  width: 30%;
+}
+
+#aboutUL {
+  background-color: red;
+  height: 250px;
+  width: 30%;
+  padding: 0;
+}
+
+.sec2 {
+  background-color: yellow;
+  width: auto;
+  height: 100vh;
+}
+
+.sec3 {
+  background-color: red;
+  width: auto;
+  height: 100vh;
+}
+
+#contactsP {
+  background-color: green;
+  height: 250px;
+  width: 30%;
+}
+
+.form {
+  background-color: green;
+  height: 250px;
+  width: 30%;
+}
+
+/* tablet */
+@media (max-width: 768px){
+
+}
+
+/* phones */
+@media (max-width: 600px){
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
