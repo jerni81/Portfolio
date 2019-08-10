@@ -12,7 +12,8 @@ fetch(source)
       return {
         title: d.gsx$title.$t,
         image: d.gsx$image.$t,
-        description: d.gsx$description.$t
+        description: d.gsx$description.$t,
+        active: false
       }
   })
   console.log('this is projects', projects);
@@ -26,14 +27,19 @@ class Card {
     this.title = obj.title
     this.image = obj.image
     this.description = obj.description
+    this.active = obj.active
   }
 
   render() {
     const item = document.createElement('div')
     item.classList.add('carousel-item')
+    if(this.active === true) {
+      item.classList.add('active')
+      }
 
     const col = document.createElement('div')
-    col.classList.add('col');
+    // col.classList.add('col');
+    col.classList.add('w-100');
 
     const card = document.createElement('div')
     card.classList.add('card');
@@ -58,6 +64,7 @@ class Card {
     col.appendChild(card)
     item.appendChild(col)
 
+
     return item
   }
 }
@@ -80,6 +87,10 @@ class CardContent {
 }
 
 function createCards(projects){
+  // We want to set the first one as active
+  if (projects.length > 0) {
+   projects[0].active = true;
+  }
   const projectDiv = document.querySelector('.carousel-inner')
   projects.forEach( obj => {
     let card = new Card(obj)

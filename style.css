@@ -75,21 +75,25 @@ ul {
 }
 
 div.carousel-inner{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
+/* .carousel-item {
+  margin-right: -135%;
+} */
+.carousel-item {
+  margin-right:0;
+}
 .card {
   height: 300px;
-  width: 50px;
+  width: 203px;
 }
 
-.cardImage {
-  height: 300px;
-  width: 50px;
-} */
+.card-image > img {
+  height: 200px;
+  max-width: 200px;
+}
 
 .sec3 {
   background-color: #bab3b3;
