@@ -38,8 +38,6 @@ class Card {
       }
 
     const col = document.createElement('div')
-    // col.classList.add('col');
-    // col.classList.add('w-100');
 
     const card = document.createElement('div')
     card.classList.add('card');
