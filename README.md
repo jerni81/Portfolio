@@ -23,3 +23,8 @@ The parallaxes
 
 Challenges:
 Linking the API to the carousel and having it create a card with an active class
+
+Code Snippets:
+https://i.imgur.com/4jTFFEL.png
+https://i.imgur.com/uqbn1fS.png
+https://i.imgur.com/WZAUrwB.png
